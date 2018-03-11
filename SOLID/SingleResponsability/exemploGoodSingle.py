@@ -1,45 +1,20 @@
-
-class Formas():
-    """Classe mais abstrata"""
-    def calculaArea(self):
-        pass
-
-class Retangulo(Formas):
-    """Classe concreta """
+    #código 2-classes seguindo o principio da responsabilidade única
+class JogoProcessamento(object):
     def __init__(self):
-        self.tipo ="retangulo"
-        print("retangulo")
+    """ contrutor de um objeto que contem a lógica do jogo"""
+        print("inicializou a classe!")
 
-    def calculaArea(self):
-        print("area do retangulo")
+    def calcularFisica(self):
+        print("calculando a física do jogo")
 
-class Circulo(Formas):
-    """Classe concreta """
+
+class JogoPersistencia(object):
     def __init__(self):
-        self.tipo ="circulo"
-        print("circulo")
+    """contrutor de um objeto que lida com a persistencia dos dados desse jogo"""
+        print("inicializou a classe!")
 
-    def calculaArea(self):
-        print("area do circulo")
+    def gravarArquivo(self):
+        print("gravando o estado corrente do jogo")
 
-class CalculadoraDeAreas():
-    def __init__(self):
-        self.figuras = []
-
-    def adicionaFigura(self,figura):
-        self.figuras.append(figura)
-
-    def calulaAreaDasFiguras(self):
-        for figura in self.figuras:
-            figura.calculaArea()
-            print("soma da area nova com as antigas")
-
-
-r1 = Retangulo()
-# criado um Retangulo
-c1 = Circulo()
-# criado um Retangulo
-cal = CalculadoraDeAreas()
-cal.adicionaFigura(r1)
-cal.adicionaFigura(c1)
-cal.calulaAreaDasFiguras()
+    def carregarArquivo(self):
+        print("carrega o estado corrente do jogo")
