@@ -1,12 +1,9 @@
 
  ## Nesse Repositório
 
- Nesse Repositório se encontra dois arquivos:
-
-
- * exemploBadSingle.py : arquivo que contém um exemplo que fere o principio da responsabilidade unica
- * exemploGoodSingle.py : arquivo que contém um exemplo que segue o principio da responsabilidade unica
-
- ##princípio da Responsabilidade Uníca
-
-  O principio da responsabilidade unica vem da premissa que todos os modulos ou classes devem ter apenas uma responsabilidade sobre uma unica parte ou funcionalidade provida pelo software. Para maior explicações acesse http://www.professormarcolan.com.br/principios-solid-principio-da-responsabilidade-unica/
+ Nesse Repositório se encontra uma pasta para cada principio defendido pela SOLID
+ 
+ 
+ ## Explicação dos principio SOLID
+ 
+ Para encontrar explicações sobre os principios SOLID acesse o site : http://www.professormarcolan.com.br/tag/solid/
